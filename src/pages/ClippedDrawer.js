@@ -73,7 +73,7 @@ path: "/export"
       <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
         <Toolbar>
           <Typography variant="h6" align="left" noWrap component="div" sx={{flexGrow:1}}>
-            ORG_NAME_HERE
+            process.env.REACT_APP_ORG_NAME
           </Typography>
 
           {!user && <Button color="inherit" onClick={() => navigate('/login')}>Log In</Button>}

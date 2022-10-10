@@ -1,4 +1,19 @@
-# Getting Started with Create React App
+# Tweet Labeler
+
+## Set up
+
+Make sure you have node installed. You'll also need an account with Google to use Firebase.
+
+### Create the Firebase project
+
+Go to your Firebase console. You can do this by going to the [Firebase website](https://firebase.google.com/) and logging in with your Google account.
+
+Click "Add project" and give your project a name and continue.
+Keep Google analytics enabled and continue.
+Use the dropdown to select your google account and click "Create Project."
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +82,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->

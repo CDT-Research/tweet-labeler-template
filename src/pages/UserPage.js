@@ -9,9 +9,6 @@ import LabelZone from '../components/LabelZone/LabelZone'
 import {useActiveContext} from '../hooks/useActiveContext'
 const UserPage = ({userid, usermail}) => {
 
-
-
-
   const {pageLoading, pageMessage, batchToLoad, error, loadtoggle} = useUserPage(userid)
   const {currentTweet, addLabel, getBatch, listPointer, batchError, batchPending, tweetList, batchOver} = useBatch()
 

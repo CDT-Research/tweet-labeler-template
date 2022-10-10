@@ -20,9 +20,9 @@ const Router = () => {
         <ClippedDrawer>
           {/*guarded routes for logged in users */}
           {user && <Routes>
-            <Route path="/" element={user.uid == ADMIN_ID ? <Dashboard /> : <UserPage userid={user.uid} usermail={user.email}/>} />
+            <Route path="/" element={user.uid == process.env.REACT_APP_ADMIN_ID ? <Dashboard /> : <UserPage userid={user.uid} usermail={user.email}/>} />
             {/*routes just for admin */}
-            {user.uid == ADMIN_ID && <>
+            {user.uid == process.env.REAT_APP_ADMIN_ID && <>
             <Route path="/newproject" element={<NewProject />} />
             <Route path="/upload" element={<FileLoader />} />
             <Route path="/export" element={<Export />} />
