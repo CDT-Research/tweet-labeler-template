@@ -1,5 +1,4 @@
 import {useState, useEffect} from 'react'
-import {projectStorage} from '../firebase/config'
 import {shuffle, splitIntoChunks, addFireBatches} from '../helpers'
 
 //poorly named helper function that turns a json file

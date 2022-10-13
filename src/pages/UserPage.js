@@ -5,7 +5,7 @@ import Button from '@mui/material/Button'
 import {useState, useEffect} from 'react'
 import {useUserPage} from '../hooks/useUserPage'
 import {useBatch} from '../hooks/useBatch'
-import LabelZone from '../components/LabelZone/LabelZone'
+import LabelZone from '../components/LabelZone'
 import {useActiveContext} from '../hooks/useActiveContext'
 const UserPage = ({userid, usermail}) => {
 

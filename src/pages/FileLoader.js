@@ -26,6 +26,7 @@ const FileLoader = () => {
   const {errMess, pendingMessage, isPending, makeBatches} = useFileLoader()
 
   const handleUpload = (e) => {
+    console.log('will load')
     if (!e.target.files){
       return
     }
@@ -56,8 +57,7 @@ const FileLoader = () => {
     <Box component="form" onSubmit={handleSubmit} sx={{display:'flex', flexDirection:'column'}}>
       <Box sx={{display:'flex', justifyContent: 'space-between', mt: 3, mb: 2 }}>
 
-        {!file &&
-          <Button
+        {!file && <Button
             startIcon={<UploadFileIcon/>}
   variant="outlined"
   component="label"
@@ -69,6 +69,7 @@ const FileLoader = () => {
     onChange={handleUpload}
   />
 </Button>
+
 
   }
   {file && <Button variant="outlined" startIcon={<CancelIcon/>} component="label" onClick={removeFile}>{file.name}</Button>}

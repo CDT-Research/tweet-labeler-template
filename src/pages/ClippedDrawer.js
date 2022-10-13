@@ -20,7 +20,7 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import AddIcon from '@mui/icons-material/Add';
 import ArchiveIcon from '@mui/icons-material/Archive';
 // import Login from '../Login/Login'
-import Dashboard from '../Dashboard/Dashboard'
+import Dashboard from './Dashboard'
 import Button from '@mui/material/Button'
 import {useNavigate, useLocation} from 'react-router-dom'
 
@@ -73,7 +73,7 @@ path: "/export"
       <AppBar position="fixed" sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
         <Toolbar>
           <Typography variant="h6" align="left" noWrap component="div" sx={{flexGrow:1}}>
-            process.env.REACT_APP_ORG_NAME
+            {process.env.REACT_APP_ORG_NAME}
           </Typography>
 
           {!user && <Button color="inherit" onClick={() => navigate('/login')}>Log In</Button>}
@@ -84,7 +84,7 @@ path: "/export"
         </Toolbar>
       </AppBar>
 
-      { user && user.uid==ADMIN_ID && <Drawer
+      { user && user.uid==process.env.REACT_APP_ADMIN_ID && <Drawer
         variant="permanent"
         sx={{
           width: drawerWidth,

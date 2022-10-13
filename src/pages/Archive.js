@@ -2,9 +2,9 @@ import Container from '@mui/material/Container'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
-import ProjectDetails from '../../components/ProjectDetails/ProjectDetails'
+import ProjectDetails from '../components/ProjectDetails'
 import {useState, useEffect} from 'react'
-import {useActiveContext} from '../../hooks/useActiveContext'
+import {useActiveContext} from '../hooks/useActiveContext'
 
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
