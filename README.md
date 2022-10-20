@@ -7,7 +7,7 @@ Make sure you have node installed. You'll also need an account with Google to us
 ### Create your project folder
 Open up your terminal and navigate to the folder in which you want to create the project.
 
-Clone this repository into a new folder with *git clone https://github.com/bigjmn/tweet-labeler-template.git <my-project-home>*
+Clone this repository into a new folder with *git clone https://github.com/CDT-Research/tweet-labeler-template/tree/add-license-1 <my-project-home>*
 
 Open this folder with an IDE. In your IDE, open a terminal and confirm that you're in the root of your project folder.
 
